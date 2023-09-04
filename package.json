@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "concurrently -k -n \"Typescript,Node\" -p \"[{name}]\" -c \"blue,green\" \"tsc --watch\" \"nodemon dist/index.js\"",
-    "start": "tsc && node dist/index.js",
+    "start": "tsc && node dist/index.js --help",
     "hello": "echo \"hello le monde",
+    "named": "tsc && node dist/index.js --name Aymeric",
     "test": "echo \"Error: no test specified\" && exit 1"
 
   },
