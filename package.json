@@ -1,0 +1,25 @@
+{
+  "name": "hello",
+  "version": "0.0.1",
+  "description": "le début d'une grande aventure",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lefentome38/brief_NodeJson.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lefentome38/brief_NodeJson/issues"
+  },
+  "homepage": "https://github.com/Lefentome38/brief_NodeJson#readme",
+  "devDependencies": {
+    "@types/node": "^20.5.9",
+    "concurrently": "^8.2.1",
+    "nodemon": "^3.0.1",
+    "typescript": "^5.2.2"
+  }
+}
