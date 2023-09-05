@@ -1,0 +1,4 @@
+- pas de dossier dist
+- pas de dist dans le .gitignore
+- l'index.js dans le src
+- pas de fichier index.ts

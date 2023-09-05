@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "concurrently -k -n \"Typescript,Node\" -p \"[{name}]\" -c \"blue,green\" \"tsc --watch\" \"nodemon dist/index.js\"",
-    "start": "tsc && node dist/index.js --help",
+    "start": "tsc && node dist/index.js --name",
     "hello": "echo \"hello le monde",
     "named": "tsc && node dist/index.js --name Aymeric",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,5 +25,8 @@
     "concurrently": "^8.2.1",
     "nodemon": "^3.0.1",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "fs-extra": "^11.1.1"
   }
 }
