@@ -13,8 +13,16 @@ function Argu() {
         console.log("hello le monde");
     }
 }
+ 
+import express from 'express'
+const app = express()
+const port = 3001
 
+app.get('/', (req, res) => {
 
+})
+
+app.get('/personnage', (req, res) => {
 
 FuncPersonne()
 
@@ -45,6 +53,28 @@ function FuncPersonne() {
         console.log('entrer un nom');
     }
 }
+
+
+})
+
+app.get('/toto', (req, res) => {
+
+    res.send('Hello toto')
+    console.log('toto');
+})
+
+app.get('/date', (req, res) => {
+    var today = new Date();
+    var hours = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    var date = today.getDate() + "/" +today.getMonth() + "/" + today.getFullYear()
+    res.send(today)
+    console.log("nous somme le ", date , "et il est " , hours);
+})
+
+app.listen(port, () => {
+// console.log(`Example app listening on port ${port}`)
+})
+
 
 
 

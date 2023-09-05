@@ -1,0 +1,7 @@
+GET http://localhost:3001/personnage 
+
+###
+GET http://localhost:3001/toto 
+
+###
+GET http://localhost:3001/date
