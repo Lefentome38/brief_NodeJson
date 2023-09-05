@@ -15,6 +15,7 @@ function Argu() {
 }
 
 
+
 interface IPersonne {
     nom : string
     prenom : string
@@ -22,20 +23,24 @@ interface IPersonne {
     sex : string
 }
 
+FuncPersonne()
 
-const p:IPersonne={nom:"rambaud",prenom:"aymeric",age:21,sex:"homme"}
-console.log("hello",p.nom,p.prenom,p.age,"ans",p.sex);
+function FuncPersonne() {
+    const p:IPersonne={nom:"rambaud",prenom:"aymeric",age:21,sex:"homme"}
+    console.log("hello",p.nom,p.prenom,p.age,"ans",p.sex);
+    
+    
+    const p_2:IPersonne={nom:"Lophriéno",prenom:"Ethane",age:18,sex:"homme"}
+    console.log("hello",p_2.nom,p_2.prenom,p_2.age,"ans",p_2.sex);
+    
+    
+    const p_3:IPersonne={nom:"wasteur",prenom:"Logane",age:21,sex:"homme"}
+    console.log("hello",p_3.nom,p_3.prenom,p_3.age,"ans",p_3.sex);
+    
+    const p2 = p_3
+    console.log("hello",p2.nom,p2.prenom,p2.age,"ans",p2.sex); 
+}
 
-
-const p_2:IPersonne={nom:"Lophriéno",prenom:"Ethane",age:18,sex:"homme"}
-console.log("hello",p_2.nom,p_2.prenom,p_2.age,"ans",p_2.sex);
-
-
-const p_3:IPersonne={nom:"wasteur",prenom:"Logane",age:21,sex:"homme"}
-console.log("hello",p_3.nom,p_3.prenom,p_3.age,"ans",p_3.sex);
-
-const p2 = p_3
-console.log("hello",p2.nom,p2.prenom,p2.age,"ans",p2.sex);
 
 
 

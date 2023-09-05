@@ -9,7 +9,6 @@
     "hello": "echo \"hello le monde",
     "named": "tsc && node dist/index.js --name Aymeric",
     "test": "echo \"Error: no test specified\" && exit 1"
-
   },
   "repository": {
     "type": "git",
